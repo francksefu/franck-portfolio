@@ -5,7 +5,7 @@
   background-color: black;
 }
 
-.header h1 {
+h1 {
   font-size: 70px;
   font-weight: 300;
 }
@@ -13,6 +13,11 @@
 .rounde {
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.pos-abs {
+  position: relative;
+  right: 0;
 }
 
 .img-b {
@@ -28,13 +33,26 @@ body {
   font-family: Lato, sans-serif;
 }
 
-/*
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+.font-beige {
+  background-color: antiquewhite;
 }
 
-*/
+.font-black {
+  background-color: black;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+}
+
+.pad {
+  padding-top: 70px;
+  transition: transform 1s;
+}
+
+.pad:hover {
+  transform: scale(1.2);
+}
+

@@ -1,6 +1,7 @@
 import './App.css'
 import Description from './components/homes/Description'
 import Header from './components/homes/Hearder'
+import Work from './components/homes/Work'
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <Header />
       <Description />
+      <Work />
     </>
   )
 }
