@@ -84,3 +84,38 @@ h6 {
   color: bisque;
 }
 
+.fontS {
+  font-weight: 200;
+}
+
+ul {
+  list-style: none;
+}
+
+#pate {
+  transform: scale(1);
+  transition: transform 0.75s
+}
+
+#cross {
+  transform: scale(0);
+  transition: transform 0.75s
+}
+
+#hide-menu {
+  transform: scaleY(0);
+  height: 0;
+  transition: transform 0.75s, height 2s;
+}
+
+#hide-menu1 {
+  transform: scaleY(0);
+  height: 0;
+  transition: transform 0.5s, height 2s;
+}
+
+.some {
+  font-weight: 200;
+  font-family: "Caveat", cursive;;
+}
+
