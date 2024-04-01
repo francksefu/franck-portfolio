@@ -2,10 +2,35 @@ import Ruby from '../../assets/images/ruby.jpg';
 import RSpec from '../../assets/images/RSpec.png'
 import Capybara from '../../assets/images/capybara.png';
 import Selenium from '../../assets/images/selenium.png';
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
+
+const boxVariant = {
+  visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
+  hidden: { opacity: 0.2, scale: 0.5 }
+};
 
 const Stack = () => {
+  const control = useAnimation();
+  const [ref1, inView1] = useInView();
+  useEffect(() => {
+    if (inView1) {
+      control.start("visible");
+    } else {
+      control.start("hidden");
+    }
+  }, [ inView1]);
+
   return (
     <div className="container-fluid p-3 font-beige">
+      <motion.div
+         className=""
+         ref={ref1}
+         variants={boxVariant}
+         initial="hidden"
+         animate={control}
+      >
       <div className="row">
         <div className="col-md-2"> </div>
         <div  className="col-md-8  border-start rounded d-flex flex-row bd-highlight mb-3 justify-content-between">
@@ -118,7 +143,7 @@ const Stack = () => {
             </div>
 
             <div className="p-3">
-              <i class="fa-brands fa-github"></i>
+              <i class="fa-brands fa-github text-secondary"></i>
               <h6>gitHub</h6>
             </div>
 
@@ -128,7 +153,7 @@ const Stack = () => {
             </div>
 
             <div className="p-3">
-              <i class="fa-brands fa-codepen"></i>
+              <i class="fa-brands fa-codepen text-primary"></i>
               <h6>code pen</h6>
             </div>
 
@@ -137,6 +162,7 @@ const Stack = () => {
         </div>
         <div className="col-md-2"> </div>
       </div>
+      </motion.div>
     </div>
   );
 }
