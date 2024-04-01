@@ -13,17 +13,17 @@ const Stack = () => {
             <h2> Languages</h2>
           </div>
           <div className=" d-flex">
-            <div className="p-2">
+            <div className="p-3">
               <i class="fa-brands fa-html5 text-danger"></i>
               <h6>Html5</h6>
             </div>
 
-            <div className="p-2">
+            <div className="p-3">
               <i className="fa-brands fa-css3 text-success"></i>
               <h6>Css3</h6>
             </div>
 
-            <div className="p-2">
+            <div className="p-3">
               <img
                 width="50"
                 height="50"
@@ -50,17 +50,17 @@ const Stack = () => {
             <h2>Framework</h2>
           </div>
           <div className=" d-flex">
-            <div className="p-2">
+            <div className="p-3">
               <i class="fa-brands fa-react text-primary"></i>
               <h6>React</h6>
             </div>
 
-            <div className="p-2">
+            <div className="p-3">
             <i class="fa-brands fa-bootstrap text-primary"></i>
               <h6>Bootstrap</h6>
             </div>
 
-            <div className="p-2">
+            <div className="p-3">
               <img
                 width="50"
                 height="50"
@@ -70,7 +70,7 @@ const Stack = () => {
               <h6>Ruby on Rails</h6>
             </div>
 
-            <div className="p-2">
+            <div className="p-3">
               <img
                 width="50"
                 height="50"
@@ -80,7 +80,7 @@ const Stack = () => {
               <h6>RSpec</h6>
             </div>
 
-            <div className="p-2">
+            <div className="p-3">
               <img
                 width="50"
                 height="50"
@@ -90,7 +90,7 @@ const Stack = () => {
               <h6>capybara</h6>
             </div>
 
-            <div className="p-2">
+            <div className="p-3">
               <img
                 width="50"
                 height="50"
@@ -99,6 +99,39 @@ const Stack = () => {
               />
               <h6>Selenium</h6>
             </div>
+          </div>
+           
+        </div>
+        <div className="col-md-2"> </div>
+      </div>
+
+      <div className="row">
+        <div className="col-md-2"> </div>
+        <div  className="col-md-8  border-start rounded d-flex flex-row bd-highlight mb-3 justify-content-between">
+          <div className="" style={{verticalAlign: 'center'}}>
+            <h2>Skills</h2>
+          </div>
+          <div className=" d-flex">
+            <div className="p-3">
+              <i class="fa-brands fa-git"></i>
+              <h6>git</h6>
+            </div>
+
+            <div className="p-3">
+              <i class="fa-brands fa-github"></i>
+              <h6>gitHub</h6>
+            </div>
+
+            <div className="p-3">
+              <i class="fa-solid fa-terminal"></i>
+              <h6>Terminal</h6>
+            </div>
+
+            <div className="p-3">
+              <i class="fa-brands fa-codepen"></i>
+              <h6>code pen</h6>
+            </div>
+
           </div>
             
         </div>
