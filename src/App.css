@@ -55,6 +55,11 @@ body {
   transition: transform 1s;
 }
 
+.taille {
+  width: 100px;
+  height: 100px;
+}
+
 .grid div:hover {
   transform: scale(1.1);
 }
@@ -65,5 +70,13 @@ h2 {
 
 .pad-img {
   padding-top: 35px;
+}
+
+i {
+  font-size: 50px;
+}
+
+h6 {
+  font-weight: 300;
 }
 

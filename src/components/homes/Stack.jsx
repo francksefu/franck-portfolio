@@ -1,0 +1,111 @@
+import Ruby from '../../assets/images/ruby.jpg';
+import RSpec from '../../assets/images/RSpec.png'
+import Capybara from '../../assets/images/capybara.png';
+import Selenium from '../../assets/images/selenium.png';
+
+const Stack = () => {
+  return (
+    <div className="container-fluid p-3 font-beige">
+      <div className="row">
+        <div className="col-md-2"> </div>
+        <div  className="col-md-8  border-start rounded d-flex flex-row bd-highlight mb-3 justify-content-between">
+          <div className="" style={{verticalAlign: 'center'}}>
+            <h2> Languages</h2>
+          </div>
+          <div className=" d-flex">
+            <div className="p-2">
+              <i class="fa-brands fa-html5 text-danger"></i>
+              <h6>Html5</h6>
+            </div>
+
+            <div className="p-2">
+              <i className="fa-brands fa-css3 text-success"></i>
+              <h6>Css3</h6>
+            </div>
+
+            <div className="p-2">
+              <img
+                width="50"
+                height="50"
+                src={Ruby}
+                className=""
+              />
+              <h6>Ruby</h6>
+            </div>
+
+            <div className="p-2">
+              <i class="fa-brands fa-js text-warning"></i>
+              <h6>JavaScript</h6>
+            </div>
+          </div>
+
+            
+        </div>
+        <div className="col-md-2"> </div>
+      </div>
+      <div className="row">
+        <div className="col-md-2"> </div>
+        <div  className="col-md-8  border-start rounded d-flex flex-row bd-highlight mb-3 justify-content-between">
+          <div className="" style={{verticalAlign: 'center'}}>
+            <h2>Framework</h2>
+          </div>
+          <div className=" d-flex">
+            <div className="p-2">
+              <i class="fa-brands fa-react text-primary"></i>
+              <h6>React</h6>
+            </div>
+
+            <div className="p-2">
+            <i class="fa-brands fa-bootstrap text-primary"></i>
+              <h6>Bootstrap</h6>
+            </div>
+
+            <div className="p-2">
+              <img
+                width="50"
+                height="50"
+                src={Ruby}
+                className=""
+              />
+              <h6>Ruby on Rails</h6>
+            </div>
+
+            <div className="p-2">
+              <img
+                width="50"
+                height="50"
+                src={RSpec}
+                className=""
+              />
+              <h6>RSpec</h6>
+            </div>
+
+            <div className="p-2">
+              <img
+                width="50"
+                height="50"
+                src={Capybara}
+                className=""
+              />
+              <h6>capybara</h6>
+            </div>
+
+            <div className="p-2">
+              <img
+                width="50"
+                height="50"
+                src={Selenium}
+                className=""
+              />
+              <h6>Selenium</h6>
+            </div>
+          </div>
+            
+        </div>
+        <div className="col-md-2"> </div>
+      </div>
+    </div>
+  );
+}
+
+export default Stack;
