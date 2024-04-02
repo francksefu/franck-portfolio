@@ -12,7 +12,8 @@ export const projects = [
     productionUrl: 'https://kerygme.vercel.app/',
     gitUrl: {frontEnd: 'https://github.com/francksefu/kerygme', backEnd: null},
     description: '',
-    languages: ['HTML5', 'CSS3', 'React', 'Bootstrap']
+    languages: ['HTML5', 'CSS3', 'React', 'Bootstrap'],
+    projectPicture: []
   },
   {
     name: 'Franck Blogs',
