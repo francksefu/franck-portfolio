@@ -1,7 +1,12 @@
-import Projet1 from '../../assets/images/kiko1.png';
+import Projet1 from '../../../public/images/kiko/kiko1.png';
 import Projet2 from '../../assets/images/projet2.png';
 import Projet3 from '../../assets/images/projet3.png';
 import Projet4 from '../../assets/images/project4.png';
+import Kikofond1 from  '../../../public/images/kiko/kikofond1.png';
+import Kikofond2 from  '../../../public/images/kiko/kikofond2.png';
+import Kikophone1 from  '../../../public/images/kiko/kikophone1.png';
+import Kikophone2 from  '../../../public/images/kiko/kikophone2.png';
+import Carmen from  '../../../public/images/kiko/kikocarmen.png';
 
 export const projects = [
   {
@@ -11,9 +16,10 @@ export const projects = [
     imageUrl: Projet1,
     productionUrl: 'https://kerygme.vercel.app/',
     gitUrl: {frontEnd: 'https://github.com/francksefu/kerygme', backEnd: null},
-    description: '',
+    description: `Ici nous ecrivons ce que le projet possed
+    beacoup des choses patati patata kdkdkfbhdvhwa jhvuwevjdc`,
     languages: ['HTML5', 'CSS3', 'React', 'Bootstrap'],
-    projectPicture: []
+    projectPicture: [Kikofond2, Kikofond1, Kikophone1, Kikophone2, Carmen]
   },
   {
     name: 'Franck Blogs',

@@ -1,11 +1,8 @@
-import Big1 from '../../assets/images/kikofond2.png';
-import Big from '../../assets/images/kikofond1.png';
-import Kiko1 from '../../assets/images/kikophone1.png';
-import Kiko2 from '../../assets/images/kikophone2.png';
-import Carmen from '../../assets/images/kikocarmen.png';
+
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
+import { projects } from '../homes/projects';
 
 const boxVariant = {
   visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
@@ -17,6 +14,7 @@ const Project = () => {
   const control2 = useAnimation();
   const [ref1, inView1] = useInView();
   const [ref2, inView2] = useInView();
+  const projet = projects[0]
   useEffect(() => {
     if (inView1) {
       control.start("visible");
@@ -43,18 +41,18 @@ const Project = () => {
             initial="hidden"
             animate="visible"
           >
-            <h1>Project name</h1>
+            <h1>{projet.name}</h1>
           </motion.div>
-            
+           
           </div>
           <div className="col-md-6 black">
             <img
               className='img-fluid pb-1'
-              src={Big1}
+              src={projet.projectPicture[0]}
             />
             <img
               className='img-fluid'
-              src={Big}
+              src={projet.projectPicture[1]}
             />
           </div>
         </div>
@@ -72,18 +70,16 @@ const Project = () => {
             animate={control}
           >
             <p className="p-3">
-              descrition of project
-              L Avent vous enseigne a accepter la souffrance dans la chair. Vous ne pouvez pas penser que la communauté doit vous rendre heureux  et rien d autre. Le seigneur vient revenu de majesté . Et il vous fera voir vos oeuvres. Il dit que les chrétiens sont suivis par leurs oeuvres.
+              {projet.description}
             </p>
             <div className="d-flex justify-content-center">
-              <button className="btn btn-light m-3 text-success">Html5</button>
-              <button className="btn btn-light m-3 text-success"> CSS3</button>
-              <button className="btn btn-light m-3 text-success"> JavaScript</button>
-              <button className="btn btn-light m-3 text-success"> PHP </button>
+              {projet.languages.map((language) => (
+                <button className="btn btn-light m-3 text-success" key={language}>{language}</button>
+              ))}
             </div>
             <div className="d-flex justify-content-center">
-              <a href='#' target='_blank' className='btn btn-dark m-3'>Source code</a>
-              <a href='#' target='_blank' className='btn btn-dark m-3'>Preview link</a>
+              <a href={projet.gitUrl.frontEnd} target='_blank' className='btn btn-dark m-3'>Source code</a>
+              <a href={projet.productionUrl} target='_blank' className='btn btn-dark m-3'>Preview link</a>
               <a href='#' target='_blank' className='btn btn-dark m-3'>Video link</a>
             </div>
             </motion.div>
@@ -106,12 +102,12 @@ const Project = () => {
           <div className="col-md-8 row">
             <img
               className="img-fluid col-md-5"
-              src={Kiko1}
+              src={projet.projectPicture[2]}
             />
             <div className="col-md-2"> </div>
             <img
               className="img-fluid col-md-5"
-              src={Kiko2}
+              src={projet.projectPicture[3]}
             />
           </div>
           <div className="col-md-2"> </div>
@@ -121,7 +117,7 @@ const Project = () => {
           <div className='col-md-8'>
             <img
               className="img-fluid"
-              src={Carmen}
+              src={projet.projectPicture[4]}
             />
           </div>
           <div className='col-md-2'> </div>
