@@ -11,6 +11,7 @@ const boxVariant = {
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
+  const [menuBg, setMenuBg] = useState('container-fluid position-fixed bg-transparent')
   const handleMenu = () => {
     if(menu) {
       document.querySelector('#hide-menu1').style.height = '100%';
@@ -21,6 +22,7 @@ const Navbar = () => {
       document.querySelector('#pate').style.height = '0px';
       document.querySelector('#cross').style.transform = 'scaleY(1)';
       setMenu(!menu)
+      setMenuBg('container-fluid position-fixed bg-light');
     } else {
       document.querySelector('#hide-menu1').style.height = '0px';
       document.querySelector('#hide-menu1').style.height = '0px';
@@ -29,6 +31,7 @@ const Navbar = () => {
       document.querySelector('#pate').style.transform = 'scaleY(1)';
       document.querySelector('#cross').style.transform = 'scaleY(0)';
       setMenu(!menu)
+      setMenuBg('container-fluid position-fixed bg-transparent');
     }
   }
 
@@ -43,7 +46,7 @@ const Navbar = () => {
   }, [ inView1]);
 
   return(
-    <div className= {menu ? "container-fluid position-fixed bg-transparent" : "container-fluid position-fixed bg-light"}>
+    <div className= {menuBg}>
       <div className="d-flex justify-content-between">
         <div className="d-flex">
           <h2 className="some text-light pt-3">Francky</h2>
