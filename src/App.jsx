@@ -30,7 +30,6 @@ function App() {
 
   return (
     <>
-      <Navbar />
       <Header />
       <motion.div
         className=""
@@ -44,7 +43,6 @@ function App() {
 
       <Work projects={projects}/>
       <Stack />
-      <Foot />
       
     </>
   )

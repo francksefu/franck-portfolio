@@ -20,6 +20,10 @@ h1 {
   right: 0;
 }
 
+.black {
+  background-color: black;
+}
+
 .img-b {
   filter: grayscale(100%);
 }
