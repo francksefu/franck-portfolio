@@ -139,3 +139,26 @@ ul {
 .cursor {
   cursor: pointer;
 }
+
+.contact-h1 {
+  font-size: 70px;
+  font-weight: 300;
+}
+
+label {
+  display: block;
+  font-weight: 300;
+  font-family: Lato,sans-serif;
+}
+
+input, textarea {
+  border-width: 1px;
+  border-color: black;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+input:hover, textarea:hover {
+  border: none;
+}
