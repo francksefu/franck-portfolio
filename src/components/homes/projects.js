@@ -12,6 +12,11 @@ import Readerfond2 from  '../../../public/images/ReaderWriter/readerfond2.png';
 import Readerphone1 from  '../../../public/images/ReaderWriter/readerphone1.png';
 import Readerphone2 from  '../../../public/images/ReaderWriter/readerphone1.png';
 import Readerbase from  '../../../public/images/ReaderWriter/readerbase.png';
+import Pharmafond1 from  '../../../public/images/Pharmacie/Pharmafond1.png';
+import Pharmafond2 from  '../../../public/images/Pharmacie/Pharmafond2.png';
+import Pharmaphone1 from  '../../../public/images/Pharmacie/phone1.png';
+import Pharmaphone2 from  '../../../public/images/Pharmacie/phone2.png';
+import Pharmabase from  '../../../public/images/Pharmacie/base.png';
 export const projects = [
   {
     name: 'KIKO',
@@ -50,7 +55,7 @@ export const projects = [
     `,
     languages: ['HTML5', 'CSS3', 'JavaScript', 'Bootstrap', 'PHP', 'MySQL', 'SQL', 'phpMyAdmin'],
     videoUrl: 'https://www.youtube.com/watch?v=GXfj4Nc1BYU&t=447s',
-    projectPicture: []
+    projectPicture: [Pharmafond1, Pharmafond2, Pharmaphone1, Pharmaphone2, Pharmabase]
   },
   {
     name: 'BICC Open Door',
