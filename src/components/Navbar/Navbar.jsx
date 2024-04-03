@@ -46,7 +46,6 @@ const Navbar = () => {
           </h1>
         </div>
         
-       
       </div>
       <div className="row" >
           <div className="col-md-6 bg-light" id="hide-menu1">
