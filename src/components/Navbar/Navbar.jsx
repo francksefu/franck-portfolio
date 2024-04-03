@@ -1,17 +1,8 @@
 import { useState } from "react";
-import Foot from "../homes/Foot";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-const boxVariant = {
-  visible: { opacity: 1, scale: 1, transition: { duration: 1 }, width: 'auto' },
-  hidden: { opacity: 0.1, scale: 0.1, width: 0 }
-};
-
 const Navbar = () => {
-  const [menu, setMenu] = useState(false);
+  const [menu, setMenu] = useState(true);
   const [menuBg, setMenuBg] = useState('container-fluid position-fixed bg-transparent')
   const handleMenu = () => {
     if(menu) {
@@ -22,7 +13,6 @@ const Navbar = () => {
       document.querySelector('#pate').style.transform = 'scaleY(0)';
       document.querySelector('#pate').style.height = '0px';
       document.querySelector('#cross').style.transform = 'scaleY(1)';
-      setMenu(!menu)
       setMenuBg('container-fluid position-fixed bg-light');
     } else {
       document.querySelector('#hide-menu1').style.height = '0px';
@@ -31,17 +21,17 @@ const Navbar = () => {
       document.querySelector('#hide-menu').style.transform = 'scaleY(0)';
       document.querySelector('#pate').style.transform = 'scaleY(1)';
       document.querySelector('#cross').style.transform = 'scaleY(0)';
-      setMenu(!menu)
       setMenuBg('container-fluid position-fixed bg-transparent');
     }
+    setMenu(!menu)
   }
 
   return(
     <div className= {menuBg}>
       <div className="d-flex justify-content-between">
         <Link to='/' className="d-flex">
-          <h2 className="some text-light pt-3">Francky</h2>
-          <h2 className="fontS text-white pt-3">Sefu</h2>
+          <h2 className={menu ? (location.pathname == '/contact' ? "some text-dark pt-3" : "some text-light pt-3") : "some text-dark pt-3"}>Francky</h2>
+          <h2 className={menu? (location.pathname == '/contact' ? "fontS text-dark pt-3" : "fontS text-light pt-3")  : "fontS text-dark pt-3"}>Sefu</h2>
         </Link>
         <div>
           <h1 className="text-light cursor some" id="pate" onClick={handleMenu}>
@@ -62,12 +52,12 @@ const Navbar = () => {
           <div className="col-md-6 bg-light" id="hide-menu1">
             
             <div className="d-flex justify-content-between">
-              <div className="p-3 col-md-7">
+              <div className="p-3 col-md-7 no-desk">
                 <h6 className="mt-3 mb-3 pt-3 pb-3 ps-3 ms-3">GET IN TOUCH</h6>
                 <h2 className="mt-3 mb-3 pt-3 pb-3 ps-3 ms-3">francksefu1998@gmail.com</h2>
                 <div className="d-flex mt-3 p-3">
-                  <h6 className="p-3">DRIBBLE</h6>
-                  <h6 className="p-3">LINKEDIN</h6>
+                <a href="https://medium.com/@francksefu1998" className="link_a" target="_blank"><h6 className="p-3 beige">MEDIUM</h6></a>
+                <a href="https://www.linkedin.com/in/franck-sefu/" className="link_a" target="_blank"><h6 className="p-3 beige">LINKEDIN</h6></a>
                 </div>
               </div>
               
@@ -76,13 +66,11 @@ const Navbar = () => {
           </div>
           <div className="col-md-6 bg-light" id="hide-menu">
             <ul className="">
-              <li className="p-3">
+              <li className="p-3" onClick={() => setMenu(false)}>
                 <Link to="/"><h2>Home</h2></Link>
               </li>
-              <li className="p-3">
-                <h2>Works</h2>
-              </li>
-              <li className="p-3">
+              
+              <li className="p-3" onClick={() => setMenu(false)}>
                 <Link to="/contact"><h2>Contacts</h2></Link>
               </li>
             </ul>

@@ -80,9 +80,9 @@ const Project = () => {
               ))}
             </div>
             <div className="flex-grid-link justify-content-center">
-              <a href={projet.gitUrl.frontEnd} target='_blank' className='btn btn-dark m-3'>Source code</a>
-              <a href={projet.productionUrl} target='_blank' className='btn btn-dark m-3'>Preview link</a>
-              <a href='#' target='_blank' className='btn btn-dark m-3'>Video link</a>
+              <a href={projet.gitUrl.frontEnd} target='_blank' className='btn btn-dark m-3'>View code</a>
+              <a href={projet.productionUrl} target='_blank' className='btn btn-dark m-3'>Live preview</a>
+              {projet.videoUrl == '' ? null : (<a href={projet.videoUrl} target='_blank' className='btn btn-dark m-3'>Video link</a>)}
             </div>
             </motion.div>
           </div>

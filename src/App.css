@@ -175,6 +175,10 @@ input:hover, textarea:hover {
   gap: 10px;
 }
 
+.link_a {
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 600px) {
   h1 {
     font-size: 40px;

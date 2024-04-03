@@ -32,6 +32,7 @@ export const projects = [
     gitUrl: {frontEnd: 'https://github.com/francksefu/kerygme', backEnd: null},
     description: `This website was created to talk a little bit about a pious and very holy man, Kiko Arguello initiator of the neon cathecumenal way, as I have always been inspired by his life, he who is a very good artist, I decided to make a small site for him, just to have a little fun`,
     languages: ['HTML5', 'CSS3', 'React', 'Bootstrap'],
+    videoUrl: '',
     projectPicture: [Kikofond2, Kikofond1, Kikophone1, Kikophone2, Carmen]
   },
   {
