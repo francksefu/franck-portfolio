@@ -83,7 +83,7 @@ const Navbar = () => {
                 <h2>Works</h2>
               </li>
               <li className="p-3">
-                <h2>Contacts</h2>
+                <Link to="/contact"><h2>Contacts</h2></Link>
               </li>
             </ul>
           </div>

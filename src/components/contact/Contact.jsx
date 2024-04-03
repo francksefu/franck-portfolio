@@ -27,7 +27,7 @@ const Contact = () => {
               </div>
             </div>
             
-            <h6 className="text-success"> Thank you! I will answer you soon as possible! ... Best regards Franck sefu!</h6>
+            <h6 className="text-success p-3"> Thank you! I will answer you soon as possible! ... Best regards Franck sefu!</h6>
             </form>
           </div>
           <div className="col-md-2"> </div>
