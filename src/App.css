@@ -24,6 +24,15 @@ h1 {
   background-color: black;
 }
 
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+li a:hover {
+  color: burlywood;
+}
+
 .img-b {
   filter: grayscale(100%);
 }

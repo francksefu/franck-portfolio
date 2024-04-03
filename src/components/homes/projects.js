@@ -16,8 +16,7 @@ export const projects = [
     imageUrl: Projet1,
     productionUrl: 'https://kerygme.vercel.app/',
     gitUrl: {frontEnd: 'https://github.com/francksefu/kerygme', backEnd: null},
-    description: `Ici nous ecrivons ce que le projet possed
-    beacoup des choses patati patata kdkdkfbhdvhwa jhvuwevjdc`,
+    description: `This website was created to talk a little bit about a pious and very holy man, Kiko Arguello initiator of the neon cathecumenal way, as I have always been inspired by his life, he who is a very good artist, I decided to make a small site for him, just to have a little fun`,
     languages: ['HTML5', 'CSS3', 'React', 'Bootstrap'],
     projectPicture: [Kikofond2, Kikofond1, Kikophone1, Kikophone2, Carmen]
   },
@@ -28,9 +27,10 @@ export const projects = [
     imageUrl: Projet2,
     productionUrl: 'https://franckblog.netlify.app/',
     gitUrl: {frontEnd: 'https://github.com/francksefu/blog-frontend', backEnd: 'https://github.com/francksefu/blog-'},
-    description: '',
+    description: `After observing Medium, I also decided to make a small site that can allow everyone to express themselves and comment on people's posts, comments do not require any account registration but writing a post requires to have an account that only takes 1min to create it.`,
     languages: ['HTML5', 'CSS3', 'React', 'Bootstrap', 'Ruby on Rails', 'PostgreSQL'],
-    videoUrl: ''
+    videoUrl: '',
+    projectPicture: [Kikofond2, Kikofond1, Kikophone1, Kikophone2, Carmen]
   },
   {
     name: 'Pharmacie Maria',

@@ -3,6 +3,7 @@ import Foot from "../homes/Foot";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const boxVariant = {
   visible: { opacity: 1, scale: 1, transition: { duration: 1 }, width: 'auto' },
@@ -35,23 +36,13 @@ const Navbar = () => {
     }
   }
 
-  const control = useAnimation();
-  const [ref1, inView1] = useInView();
-  useEffect(() => {
-    if (inView1) {
-      control.start("visible");
-    } else {
-      control.start("hidden");
-    }
-  }, [ inView1]);
-
   return(
     <div className= {menuBg}>
       <div className="d-flex justify-content-between">
-        <div className="d-flex">
+        <Link to='/' className="d-flex">
           <h2 className="some text-light pt-3">Francky</h2>
           <h2 className="fontS text-white pt-3">Sefu</h2>
-        </div>
+        </Link>
         <div>
           <h1 className="text-light some" id="pate" onClick={handleMenu}>
             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" className="bi bi-list some" viewBox="0 0 16 16">
@@ -86,7 +77,7 @@ const Navbar = () => {
           <div className="col-md-6 bg-light" id="hide-menu">
             <ul className="">
               <li className="p-3">
-                <h2>Home</h2>
+                <Link to="/"><h2>Home</h2></Link>
               </li>
               <li className="p-3">
                 <h2>Works</h2>

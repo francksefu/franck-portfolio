@@ -32,6 +32,7 @@ const Project = () => {
   }, [ inView2]);
   return(
     <>
+      <Navbar />
       <div className="container-fluid">
         <div className="row">
           <div className="col-md-6 header text-white">
