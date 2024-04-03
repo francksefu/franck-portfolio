@@ -162,3 +162,44 @@ input, textarea {
 input:hover, textarea:hover {
   border: none;
 }
+
+.flex-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+}
+
+.flex-grid-link {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 40px;
+    font-weight: 300;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 5px;
+  }
+
+  .flex-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+  }
+
+  .flex-grid-link {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 3px;
+  }
+
+  .no-desk {
+    display: none;
+  }
+}

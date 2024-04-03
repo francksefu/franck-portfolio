@@ -64,7 +64,7 @@ const Contact = () => {
               </div>
             </div>
             <label className="pt-3 pb-2 mt-3"> TELL ME ABOUT YOUR PROJECT </label>
-            <textarea id="message" name="message" className="col-md-12 bg-light border-none" rows="3" placeholder="Write here ..."></textarea>
+            <textarea id="message" name="message" className="w-100 bg-light border-none" rows="3" placeholder="Write here ..."></textarea>
             <ValidationError 
               prefix="Message" 
               field="message"

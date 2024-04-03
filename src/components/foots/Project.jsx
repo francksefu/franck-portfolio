@@ -53,7 +53,7 @@ const Project = () => {
               src={projet.projectPicture[0]}
             />
             <img
-              className='img-fluid'
+              className='img-fluid no-desk'
               src={projet.projectPicture[1]}
             />
           </div>
@@ -74,12 +74,12 @@ const Project = () => {
             <p className="p-3">
               {projet.description}
             </p>
-            <div className="d-flex justify-content-center">
+            <div className="flex-grid justify-content-center">
               {projet.languages.map((language) => (
                 <button className="btn btn-light m-3 text-success" key={language}>{language}</button>
               ))}
             </div>
-            <div className="d-flex justify-content-center">
+            <div className="flex-grid-link justify-content-center">
               <a href={projet.gitUrl.frontEnd} target='_blank' className='btn btn-dark m-3'>Source code</a>
               <a href={projet.productionUrl} target='_blank' className='btn btn-dark m-3'>Preview link</a>
               <a href='#' target='_blank' className='btn btn-dark m-3'>Video link</a>
@@ -90,7 +90,7 @@ const Project = () => {
         </div>
       
       </div>
-      <div className="container-fluid black text-white p-3">
+      <div className="container-fluid black text-white">
         <motion.div
           className=""
           ref={ref2}
@@ -101,14 +101,14 @@ const Project = () => {
         <h2 className="text-center p-3">Mobile first Design</h2>
         <div className="row">
           <div className="col-md-2"> </div>
-          <div className="col-md-8 row">
+          <div className="col-md-8 row p-0">
             <img
-              className="img-fluid col-md-5"
+              className="img-fluid col-md-5 pt-3 shadow"
               src={projet.projectPicture[2]}
             />
             <div className="col-md-2"> </div>
             <img
-              className="img-fluid col-md-5"
+              className="img-fluid col-md-5 pt-3 shadow"
               src={projet.projectPicture[3]}
             />
           </div>

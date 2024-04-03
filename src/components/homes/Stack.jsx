@@ -37,7 +37,7 @@ const Stack = () => {
           <div className="" style={{verticalAlign: 'center'}}>
             <h2> Languages</h2>
           </div>
-          <div className=" d-flex">
+          <div className="flex-grid">
             <div className="p-3">
               <i class="fa-brands fa-html5 text-danger"></i>
               <h6>Html5</h6>
@@ -74,7 +74,7 @@ const Stack = () => {
           <div className="" style={{verticalAlign: 'center'}}>
             <h2>Framework</h2>
           </div>
-          <div className=" d-flex">
+          <div className="flex-grid">
             <div className="p-3">
               <i class="fa-brands fa-react text-primary"></i>
               <h6>React</h6>
@@ -136,7 +136,7 @@ const Stack = () => {
           <div className="" style={{verticalAlign: 'center'}}>
             <h2>Skills</h2>
           </div>
-          <div className=" d-flex">
+          <div className="flex-grid">
             <div className="p-3">
               <i class="fa-brands fa-git"></i>
               <h6>git</h6>

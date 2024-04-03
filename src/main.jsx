@@ -6,7 +6,6 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Project from './components/foots/Project.jsx'
 import Foot from './components/homes/Foot.jsx'
 import Contact from './components/contact/Contact.jsx'
-import ContactForm from './components/contact/ContactForm.jsx'
 
 const router = createBrowserRouter([
   {
