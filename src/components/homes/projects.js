@@ -7,7 +7,11 @@ import Kikofond2 from  '../../../public/images/kiko/kikofond2.png';
 import Kikophone1 from  '../../../public/images/kiko/kikophone1.png';
 import Kikophone2 from  '../../../public/images/kiko/kikophone2.png';
 import Carmen from  '../../../public/images/kiko/kikocarmen.png';
-
+import Readerfond1 from  '../../../public/images/ReaderWriter/readerfond1.png';
+import Readerfond2 from  '../../../public/images/ReaderWriter/readerfond2.png';
+import Readerphone1 from  '../../../public/images/ReaderWriter/readerphone1.png';
+import Readerphone2 from  '../../../public/images/ReaderWriter/readerphone1.png';
+import Readerbase from  '../../../public/images/ReaderWriter/readerbase.png';
 export const projects = [
   {
     name: 'KIKO',
@@ -29,8 +33,8 @@ export const projects = [
     gitUrl: {frontEnd: 'https://github.com/francksefu/blog-frontend', backEnd: 'https://github.com/francksefu/blog-'},
     description: `After observing Medium, I also decided to make a small site that can allow everyone to express themselves and comment on people's posts, comments do not require any account registration but writing a post requires to have an account that only takes 1min to create it.`,
     languages: ['HTML5', 'CSS3', 'React', 'Bootstrap', 'Ruby on Rails', 'PostgreSQL'],
-    videoUrl: '',
-    projectPicture: [Kikofond2, Kikofond1, Kikophone1, Kikophone2, Carmen]
+    videoUrl: 'https://www.youtube.com/watch?v=PmAR13kZE_Q',
+    projectPicture: [Readerfond1, Readerfond2, Readerphone1, Readerphone2, Readerbase]
   },
   {
     name: 'Pharmacie Maria',
@@ -39,9 +43,14 @@ export const projects = [
     imageUrl: Projet3,
     productionUrl: 'https://pharmacie-maria.000webhostapp.com/',
     gitUrl: {frontEnd: 'https://github.com/francksefu/Pharmacie-Maria', backEnd: ''},
-    description: '',
+    description: `With selling entrepreneurs in mind, why not also offer them something
+     to make their businesses easier? It is with this reflection that I decided to build
+      this application that allows the management of the stock and the management of the
+       salaries of the employees while giving them a balance sheet on any period of the year. note that for this application, it's the logic that matters much more
+    `,
     languages: ['HTML5', 'CSS3', 'JavaScript', 'Bootstrap', 'PHP', 'MySQL', 'SQL', 'phpMyAdmin'],
-    videoUrl: ''
+    videoUrl: 'https://www.youtube.com/watch?v=GXfj4Nc1BYU&t=447s',
+    projectPicture: []
   },
   {
     name: 'BICC Open Door',
@@ -50,7 +59,7 @@ export const projects = [
     imageUrl: Projet4,
     productionUrl: 'https://francksefu.github.io/Capstone-project/',
     gitUrl: {frontEnd: 'https://github.com/francksefu/Capstone-project', backEnd: ''},
-    description: '',
+    description: 'A company decides to create a particular event on a particular date, with this thought in mind, I decided to simulate this by creating this small website',
     languages: ['HTML5', 'CSS3', 'JavaScript'],
     videoUrl: ''
   },
