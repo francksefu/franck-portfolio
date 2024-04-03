@@ -135,3 +135,7 @@ ul {
 .nav  h2{
   font-weight: 300;
 }
+
+.cursor {
+  cursor: pointer;
+}

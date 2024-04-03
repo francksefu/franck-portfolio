@@ -1,6 +1,7 @@
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const boxVariant = {
   visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
@@ -8,6 +9,11 @@ const boxVariant = {
 };
 
 const Work = ({projects}) => {
+  let navigate = useNavigate();
+  const handleClick = (value) => {
+    localStorage.setItem("current_work", JSON.stringify(value));
+    navigate('/project');
+  }
   const control = useAnimation();
   const [ref1, inView1] = useInView();
   useEffect(() => {
@@ -34,7 +40,7 @@ const Work = ({projects}) => {
         </div>
         <div className="grid">
           {projects.map((project) => (
-            <div key={project.name} className={project.id % 2 != 0 && 'pad-img'}>
+            <div key={project.name} className={project.id % 2 != 0 ? 'cursor' : 'pad-img cursor'} onClick={() => handleClick(projects.indexOf(project))}>
               <img
                 className="img-fluid rounde pad"
                 src={project.imageUrl}

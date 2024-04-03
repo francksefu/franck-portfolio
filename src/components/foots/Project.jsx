@@ -3,6 +3,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import { projects } from '../homes/projects';
+import Navbar from "../Navbar/Navbar";
 
 const boxVariant = {
   visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
@@ -14,7 +15,7 @@ const Project = () => {
   const control2 = useAnimation();
   const [ref1, inView1] = useInView();
   const [ref2, inView2] = useInView();
-  const projet = projects[0]
+  const projet = projects[JSON.parse(localStorage.getItem("current_work"))];
   useEffect(() => {
     if (inView1) {
       control.start("visible");
