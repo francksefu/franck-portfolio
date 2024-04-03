@@ -16,7 +16,12 @@ import Pharmafond1 from  '../../../public/images/Pharmacie/Pharmafond1.png';
 import Pharmafond2 from  '../../../public/images/Pharmacie/Pharmafond2.png';
 import Pharmaphone1 from  '../../../public/images/Pharmacie/phone1.png';
 import Pharmaphone2 from  '../../../public/images/Pharmacie/phone2.png';
-import Pharmabase from  '../../../public/images/Pharmacie/base.png';
+import Pharmabase from '../../../public/images/Pharmacie/base.png';
+import BICCfond1 from '../../../public/images/BICC/fond1.png';
+import BICCfond2 from '../../../public/images/BICC/fond2.png';
+import BICCphone1 from '../../../public/images/BICC/phone1.png';
+import BICCphone2 from '../../../public/images/BICC/phone2.png';
+import BICCbase from '../../../public/images/BICC/base.png';
 export const projects = [
   {
     name: 'KIKO',
@@ -52,6 +57,8 @@ export const projects = [
      to make their businesses easier? It is with this reflection that I decided to build
       this application that allows the management of the stock and the management of the
        salaries of the employees while giving them a balance sheet on any period of the year. note that for this application, it's the logic that matters much more
+       <br />
+       login with : Username : Franck, and password : franck98
     `,
     languages: ['HTML5', 'CSS3', 'JavaScript', 'Bootstrap', 'PHP', 'MySQL', 'SQL', 'phpMyAdmin'],
     videoUrl: 'https://www.youtube.com/watch?v=GXfj4Nc1BYU&t=447s',
@@ -66,7 +73,8 @@ export const projects = [
     gitUrl: {frontEnd: 'https://github.com/francksefu/Capstone-project', backEnd: ''},
     description: 'A company decides to create a particular event on a particular date, with this thought in mind, I decided to simulate this by creating this small website',
     languages: ['HTML5', 'CSS3', 'JavaScript'],
-    videoUrl: ''
+    videoUrl: '',
+    projectPicture: [BICCfond1, BICCfond2, BICCphone1, BICCphone2, BICCbase]
   },
 ];
 
