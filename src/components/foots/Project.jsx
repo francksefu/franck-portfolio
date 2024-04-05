@@ -38,7 +38,6 @@ const Project = () => {
         <div className="row">
           <div className="col-md-6 header text-white">
           <motion.div
-            className=""
             variants={boxVariant}
             initial="hidden"
             animate="visible"
@@ -81,6 +80,7 @@ const Project = () => {
             </div>
             <div className="flex-grid-link justify-content-center">
               <a href={projet.gitUrl.frontEnd} target='_blank' className='btn btn-dark m-3'>View code</a>
+              {projet.gitUrl.backEnd == '' ? null : (<a href={projet.gitUrl.backEnd} target='_blank' className='btn btn-dark m-3'>view backend code</a>)}
               <a href={projet.productionUrl} target='_blank' className='btn btn-dark m-3'>Live preview</a>
               {projet.videoUrl == '' ? null : (<a href={projet.videoUrl} target='_blank' className='btn btn-dark m-3'>Video link</a>)}
             </div>
